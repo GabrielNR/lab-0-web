@@ -12,7 +12,7 @@ const navigation = [
 ]
 
 export function Header() {
-  const { user } = useUser()
+  // const { user } = useUser()
   
   return (
     <Popover as="header" className="relative">
@@ -52,16 +52,16 @@ export function Header() {
           </div>
         </div>
         
-        { user ? (
+        {/* { user ? (
           <div className="hidden md:flex md:items-center md:space-x-6">
             <Link href="/app/courses" className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-violet-600 hover:bg-violet-700">Meus cursos</Link>
             <Link href="/api/auth/logout" className="text-base font-medium text-white hover:text-gray-300">Sair do app</Link>
           </div>
-        ) : (
+        ) : ( */}
           <div className="hidden md:flex md:items-center md:space-x-6">
             <Link href="/api/auth/login" className="text-base font-medium text-white hover:text-gray-300">Minha conta</Link>
           </div>  
-        ) }
+        {/* ) } */}
         
 
       </nav>

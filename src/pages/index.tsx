@@ -107,7 +107,7 @@ function Home() {
   return (
     <>
       <Head>
-        <title>Cursos de programação</title>
+        <title>Cursos de Marketing Digital</title>
         <link rel="shortcut icon" href="favicon.png" type="image/png" />
       </Head>
 
@@ -133,11 +133,11 @@ function Home() {
                       <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
                         <span className="block">Cursos de</span>
                         <span className="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5">
-                          programação
+                        Marketing Digital
                         </span>
                       </h1>
                       <p className="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
-                        Aprenda programação através de cursos práticos com muito código e domine as tecnologias do seu dia-a-dia.
+                        Aprenda Marketing Digital através de cursos práticos e domine a area com maior crescimento no brasil.
                       </p>
                     </div>
                   </div>
@@ -289,15 +289,15 @@ function Home() {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ req, res}) => {
-	const token = getAccessToken(req, res);
+// export const getServerSideProps: GetServerSideProps = async ({ req, res}) => {
+// 	const token = getAccessToken(req, res);
 	
-	console.log(token);
+// 	console.log(token);
 	
-	return {
-		props: {},
-	}
-}
+// 	return {
+// 		props: {},
+// 	}
+// }
 
 export default withApollo(Home)
 

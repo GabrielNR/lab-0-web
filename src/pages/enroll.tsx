@@ -116,15 +116,15 @@ function Enroll({ data }: EnrollProps) {
   )
 }
 
-export const getStaticProps: GetStaticProps = async ({ }) => {
-  const data = await getServerPageGetProducts(undefined, {} as any)
+// export const getStaticProps: GetStaticProps = async ({ }) => {
+//   const data = await getServerPageGetProducts(undefined, {} as any)
 
-  return {
-    props: data.props,
-    revalidate: 60 * 60, // 1 hour
-  }
-}
+//   return {
+//     props: data.props,
+//     revalidate: 60 * 60, // 1 hour
+//   }
+// }
 
-export default withApollo(
-  ssrGetProducts.withPage()(Enroll)
-)
+// export default withApollo(
+//   ssrGetProducts.withPage()(Enroll)
+// )

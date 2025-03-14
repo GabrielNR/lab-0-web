@@ -38,8 +38,8 @@ const dateFormatter = new Intl.DateTimeFormat('pt-BR', {
 
 function Courses() {
 
-  const { data } = useMe()
-  console.log(data?.me.enrollments)
+  // const { data } = useMe()
+  // console.log(data?.me.enrollments)
   
   return (
    <>
@@ -61,7 +61,7 @@ function Courses() {
 
           <div className="bg-white shadow overflow-hidden sm:rounded-md mt-8">
             <ul role="list" className="divide-y divide-gray-200">
-            {data?.me.enrollments.map((enrollment: any) => (
+            {/* {data?.me.enrollments.map((enrollment: any) => (
                 <li key={enrollment.id}>
                   <div className="px-4 py-4 flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
@@ -104,7 +104,7 @@ function Courses() {
                     </div>
                   </div>
                 </li>
-                ))} 
+                ))}  */}
             </ul>
           </div>
         </main>
@@ -115,19 +115,19 @@ function Courses() {
   )
 };
 
-export const getServerSideProps = withPageAuthRequired({
+// export const getServerSideProps = withPageAuthRequired({
   // getServerSideProps: async (ctx) => {
   //   //getServerPageGetProducts({}, ctx)
   //   return {
   //     props: {}
   //   }
   // }
-   returnTo: '/'
-});
+  //  returnTo: '/'
+// });
 
-export default withApollo(
-  ssrGetProducts.withPage()(Courses)
+// export default withApollo(
+//   ssrGetProducts.withPage()(Courses)
   // Home
-);
+// );
 
 
