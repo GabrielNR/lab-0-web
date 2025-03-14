@@ -1,14 +1,15 @@
-import { GetStaticProps } from "next";
+// import { GetStaticProps } from "next";
+import React from "react";
 import Head from "next/head";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { GetProductsQuery } from "../graphql/generated/graphql";
-import { getServerPageGetProducts, ssrGetProducts } from "../graphql/generated/pagePublic";
-import { withApollo } from "../lib/withApollo";
+// import { GetProductsQuery } from "../graphql/generated/graphql";
+// import { getServerPageGetProducts, ssrGetProducts } from "../graphql/generated/pagePublic";
+// import { withApollo } from "../lib/withApollo";
 
-interface EnrollProps {
-  data: GetProductsQuery;
-}
+// interface EnrollProps {
+//   data: GetProductsQuery;
+// }
 
 // const positions = [
 //   {
@@ -66,7 +67,7 @@ interface EnrollProps {
 //   }
 // ]
 
-function Enroll({ data }: EnrollProps) {
+function Enroll(/*{ data }: EnrollProps*/) {
   return (
     <>
       <Head>
@@ -128,3 +129,5 @@ function Enroll({ data }: EnrollProps) {
 // export default withApollo(
 //   ssrGetProducts.withPage()(Enroll)
 // )
+
+export default Enroll

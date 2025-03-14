@@ -1,7 +1,8 @@
 //Imports
-import { getAccessToken } from "@auth0/nextjs-auth0";
+import React from "react";
+// import { getAccessToken } from "@auth0/nextjs-auth0";
 import { CashIcon, ChatIcon, CheckCircleIcon, ChevronRightIcon, ClockIcon, DocumentTextIcon, SupportIcon } from "@heroicons/react/outline";
-import { GetServerSideProps } from "next";
+// import { GetServerSideProps } from "next";
 import Head from "next/head";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
