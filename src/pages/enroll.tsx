@@ -86,7 +86,7 @@ function Enroll({ data }: EnrollProps) {
             </div>
 
             <div className="bg-white shadow overflow-hidden sm:rounded-md mt-8">
-              <ul role="list" className="divide-y divide-gray-200">
+              {/* <ul role="list" className="divide-y divide-gray-200">
                 {data.products.map((product) => (
                   <li key={product.id}>
                     <div className="px-4 py-4 flex items-center sm:px-6">
@@ -99,14 +99,14 @@ function Enroll({ data }: EnrollProps) {
                         </div>
                       </div>
                       <div className="ml-5 flex-shrink-0">
-                        <button onClick={/*() => handlePurchaseProduct(product.id)*/() => {}} className="px-2 py-1 border border-transparent text-base font-medium rounded-md text-white bg-violet-600 hover:bg-violet-700">
-                          Realizar inscrição
+                        <button onClick={/*() => handlePurchaseProduct(product.id)() => {}} className="px-2 py-1 border border-transparent text-base font-medium rounded-md text-white bg-violet-600 hover:bg-violet-700">
+                          {/* Realizar inscrição
                         </button>
                       </div>
                     </div>
                   </li>
                 ))} 
-              </ul>
+              </ul> */} 
             </div>
           </main>
           <Footer />

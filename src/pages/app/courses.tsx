@@ -51,7 +51,7 @@ function Courses() {
     <div className="bg-white">
       <div className="relative overflow-hidden bg-gray-50">
         <Header />
-        <main className="py-20 max-w-7xl mx-auto ">
+        {/* <main className="py-20 max-w-7xl mx-auto ">
           <div className="text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
             <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">Estudar</h2>
             <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
@@ -61,7 +61,7 @@ function Courses() {
 
           <div className="bg-white shadow overflow-hidden sm:rounded-md mt-8">
             <ul role="list" className="divide-y divide-gray-200">
-            {/* {data?.me.enrollments.map((enrollment: any) => (
+            {data?.me.enrollments.map((enrollment: any) => (
                 <li key={enrollment.id}>
                   <div className="px-4 py-4 flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
@@ -104,10 +104,10 @@ function Courses() {
                     </div>
                   </div>
                 </li>
-                ))}  */}
+                ))} 
             </ul>
           </div>
-        </main>
+        </main> */}
         <Footer />
       </div>
     </div>
